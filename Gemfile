@@ -40,3 +40,6 @@ end
 
 # Bootstrap
 gem 'bootstrap-sass'
+
+# Login
+gem 'sorcery'
