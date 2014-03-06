@@ -11,20 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140223225306) do
+ActiveRecord::Schema.define(version: 20140224162346) do
 
   create_table "news_posts", force: true do |t|
-    t.string  "title"
-    t.text    "body"
-    t.integer "user_id"
+    t.string   "title",      null: false
+    t.text     "body",       null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
+    t.string   "username",         null: false
     t.string   "email",            null: false
     t.string   "crypted_password", null: false
     t.string   "salt",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "twitch"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -1,0 +1,8 @@
+<h1>News</h1>
+
+<% @posts.each do |post| %>
+	<div class="news_post">
+		<h3><%= post.title %></h3>
+		<%= simple_format(post.body) %>
+	</div>
+<% end %>
