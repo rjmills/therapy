@@ -3,6 +3,7 @@ development:
   encoding: unicode
   database: therapy_development
   pool: 5
+  password: cox7xoh1
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -12,10 +13,14 @@ test:
   encoding: unicode
   database: therapy_test
   pool: 5
+  password: cox7xoh1
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: therapy
+  host: ec2-54-225-102-235.compute-1.amazonaws.com
+  database: d9odmhm6no4isv
   pool: 5
-  password:
+  port: 5432
+  user: qbbkoyccdaogqg
+  password: y7bohC-OPS4RG406zqqi4DTqu2
