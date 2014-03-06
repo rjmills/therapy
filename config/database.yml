@@ -3,12 +3,6 @@ development:
   encoding: unicode
   database: therapy_development
   pool: 5
-<<<<<<< HEAD
-  user: postgres
-  password: cox7xoh1
-=======
-  password:
->>>>>>> 2d0db5418c637d805b2a964d23a487705d3e38ba
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,22 +12,10 @@ test:
   encoding: unicode
   database: therapy_test
   pool: 5
-<<<<<<< HEAD
-  user: postgres
-  password: cox7xoh1
-=======
-  password:
->>>>>>> 2d0db5418c637d805b2a964d23a487705d3e38ba
 
 production:
   adapter: postgresql
   encoding: unicode
-<<<<<<< HEAD
-  database: therapy_production
-  pool: 5
-  password:
-=======
   database: therapy
   pool: 5
   password:
->>>>>>> 2d0db5418c637d805b2a964d23a487705d3e38ba
